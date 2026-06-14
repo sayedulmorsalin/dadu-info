@@ -87,25 +87,85 @@ const facts = [
 
 const moderators = [
   {
-    name: shop.contactName,
-    role: "Primary order moderator",
+    name: `${shop.contactName} (Rasel Dadu Khelaghor)`,
+    role: "Primary Admin",
     contact: shop.whatsapp2,
-    responsibility: "Handles order confirmation, product questions, and customer support.",
+    displayContact: "+880 1782-124891",
+    responsibility: "Primary admin. Handles order confirmation, product questions, and customer support.",
     icon: UserCheck,
+    isWhatsapp: true,
   },
   {
-    name: "Dadu Khelaghor Team",
-    role: "Sales support",
+    name: "Rimon Islam",
+    role: "Group Admin & Sales",
     contact: shop.whatsapp1,
-    responsibility: "Receives WhatsApp orders and confirms stock, sizes, prices, and delivery details.",
+    displayContact: "+880 1787-208108",
+    responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
     icon: Phone,
+    isWhatsapp: true,
   },
   {
-    name: "Content moderator",
-    role: "YouTube and social updates",
+    name: "Md Shohan",
+    role: "Group Admin",
+    contact: "01992627866",
+    displayContact: "+880 1992-627866",
+    responsibility: "Manages group membership, moderation, and customer communications.",
+    icon: ShieldCheck,
+    isWhatsapp: true,
+  },
+  {
+    name: "Dadu Sports Ruhul",
+    role: "Group Moderator",
+    contact: "01308190735",
+    displayContact: "+880 1308-190735",
+    responsibility: "Moderates group content and supports customer inquiries.",
+    icon: UserCheck,
+    isWhatsapp: true,
+  },
+  {
+    name: "Meherj",
+    role: "Group Moderator",
+    contact: "01779455940",
+    displayContact: "+880 1779-455940",
+    responsibility: "Assists with community management and order updates.",
+    icon: UserCheck,
+    isWhatsapp: true,
+  },
+  {
+    name: "Group Moderator",
+    role: "Support Moderator",
+    contact: "01772618653",
+    displayContact: "+880 1772-618653",
+    responsibility: "Assists with community moderation and group inquiries.",
+    icon: ShieldCheck,
+    isWhatsapp: true,
+  },
+  {
+    name: "Group Moderator",
+    role: "Support Moderator",
+    contact: "01787208161",
+    displayContact: "+880 1787-208161",
+    responsibility: "Assists with community moderation and group inquiries.",
+    icon: ShieldCheck,
+    isWhatsapp: true,
+  },
+  {
+    name: "Group Moderator",
+    role: "Support Moderator",
+    contact: "01871430134",
+    displayContact: "+880 1871-430134",
+    responsibility: "Assists with community moderation and group inquiries.",
+    icon: ShieldCheck,
+    isWhatsapp: true,
+  },
+  {
+    name: "Content Moderator",
+    role: "YouTube & Social updates",
     contact: "@dadukhelaghor",
+    displayContact: "@dadukhelaghor",
     responsibility: "Keeps product videos, new arrivals, and public updates organized for customers.",
     icon: Youtube,
+    isWhatsapp: false,
   },
 ];
 
@@ -311,16 +371,34 @@ export default function Home() {
           <h2>Dadu Khelaghor team contacts and responsibilities.</h2>
         </div>
         <div className="moderatorGrid">
-          {moderators.map((moderator) => {
+          {moderators.map((moderator, index) => {
             const Icon = moderator.icon;
             return (
-              <article className="moderatorCard" key={moderator.role}>
+              <article className="moderatorCard" key={`${moderator.name}-${index}`}>
                 <Icon size={26} />
                 <div>
                   <span>{moderator.role}</span>
                   <h3>{moderator.name}</h3>
                   <p>{moderator.responsibility}</p>
-                  <strong>{moderator.contact}</strong>
+                  {moderator.isWhatsapp ? (
+                    <a
+                      href={`https://wa.me/880${moderator.contact}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="moderatorLink"
+                    >
+                      {moderator.displayContact}
+                    </a>
+                  ) : (
+                    <a
+                      href={shop.youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="moderatorLink"
+                    >
+                      {moderator.displayContact}
+                    </a>
+                  )}
                 </div>
               </article>
             );
