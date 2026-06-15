@@ -25,7 +25,13 @@ export default function BootBackground() {
       preserveDrawingBuffer: true,
     });
 
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.8));
+    const isMobileDevice = window.innerWidth < 720;
+    // Adjust pixel ratio for mobile to improve performance
+    const pixelRatio = isMobileDevice 
+      ? Math.min(window.devicePixelRatio, 1.5)
+      : Math.min(window.devicePixelRatio, 1.8);
+    
+    renderer.setPixelRatio(pixelRatio);
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.2;
@@ -49,6 +55,9 @@ export default function BootBackground() {
     let lastPointerY = 0;
     let userRotationX = 0;
     let userRotationY = 0;
+    let lastWidth = 0;
+    let lastHeight = 0;
+    let isElementVisible = true;
     const baseRotation = new THREE.Euler(-0.18, -0.62, 0.08);
     const loader = new GLTFLoader();
 
@@ -57,12 +66,12 @@ export default function BootBackground() {
       const center = box.getCenter(new THREE.Vector3());
       const size = box.getSize(new THREE.Vector3());
       const maxAxis = Math.max(size.x, size.y, size.z) || 1;
-      const scale = 5.4 / maxAxis;
+      const scale = 5.0 / maxAxis;
 
       model.position.sub(center);
       model.scale.setScalar(scale);
       model.rotation.copy(baseRotation);
-      model.position.set(2.45, -0.08, 0);
+      model.position.set(1.2, -0.08, 0);
       scene.add(model);
       boot = model;
     };
@@ -80,22 +89,61 @@ export default function BootBackground() {
     const resize = () => {
       const width = mount.clientWidth;
       const height = mount.clientHeight;
+
+      // Only trigger WebGL resize if actual dimensions changed significantly.
+      // Helps avoid blinking/re-rendering on mobile/desktop scrolls where small layout shifts or address bar actions fire resize.
+      if (width === lastWidth && Math.abs(height - lastHeight) < 120) {
+        return;
+      }
+
+      lastWidth = width;
+      lastHeight = height;
+
       const isMobile = width < 720;
+      const isSmallMobile = width < 480;
 
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(height, 1);
-      camera.position.set(isMobile ? 0.65 : 0.35, isMobile ? 0.35 : 0.15, isMobile ? 8.2 : 7.2);
-      camera.lookAt(isMobile ? 0.25 : 0.9, 0, 0);
+      camera.fov = isMobile ? 40 : 34;
+      
+      // Improved mobile camera positioning with better breakpoints
+      if (isSmallMobile) {
+        // Very small phones (under 480px)
+        camera.position.set(-2.1, 0.63, 10.8);
+        camera.lookAt(0, 0.05, 0);
+      } else if (isMobile) {
+        // Tablets and medium phones (480px - 720px)
+        camera.position.set(-2.2, 0.55, 9.7);
+        camera.lookAt(0, 0.02, 0);
+      } else {
+        // Desktop
+        camera.position.set(-2.6, 0.18, 8.0);
+        camera.lookAt(0, 0, 0);
+      }
+      
       camera.updateProjectionMatrix();
 
       if (boot) {
-        boot.position.x = isMobile ? 0.85 : 2.45;
-        boot.position.y = isMobile ? -0.7 : -0.08;
+        if (isSmallMobile) {
+          boot.position.x = -0.8;
+          boot.position.y = -0.72;
+        } else if (isMobile) {
+          boot.position.x = -0.3;
+          boot.position.y = -0.62;
+        } else {
+          boot.position.x = 0.8;
+          boot.position.y = -0.08;
+        }
       }
     };
 
     const animate = () => {
       animationFrame = window.requestAnimationFrame(animate);
+
+      // Skip rendering if the canvas is not in the viewport
+      if (!isElementVisible) {
+        return;
+      }
 
       if (boot) {
         if (!isDragging) {
@@ -122,7 +170,15 @@ export default function BootBackground() {
         return;
       }
 
-      event.preventDefault();
+      // Allow vertical scroll on mobile while preventing accidental horizontal drag
+      const isMobile = mount.clientWidth < 720;
+      if (isMobile && Math.abs(event.pointerId) === 0) {
+        // Only capture primary pointer on mobile to allow multi-touch
+        event.preventDefault();
+      } else if (!isMobile) {
+        event.preventDefault();
+      }
+
       isDragging = true;
       lastPointerX = event.clientX;
       lastPointerY = event.clientY;
@@ -157,6 +213,15 @@ export default function BootBackground() {
       }
     };
 
+    // Pause rendering loop when the component is offscreen to save resources and prevent GPU layout blinking
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isElementVisible = entry.isIntersecting;
+      },
+      { threshold: 0.05 }
+    );
+    observer.observe(mount);
+
     const interactiveTarget = getInteractiveTarget();
     resize();
     animate();
@@ -167,6 +232,7 @@ export default function BootBackground() {
     interactiveTarget.addEventListener("pointercancel", handlePointerUp);
 
     return () => {
+      observer.disconnect();
       window.cancelAnimationFrame(animationFrame);
       window.removeEventListener("resize", resize);
       interactiveTarget.removeEventListener("pointerdown", handlePointerDown);

@@ -1,0 +1,29 @@
+# robots.txt
+# Allow all search engines to crawl the website
+
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Allow: /*.js
+Allow: /*.css
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://dadu-khelaghor.vercel.app/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Other crawlers
+User-agent: *
+Allow: /
+Crawl-delay: 1
+Request-rate: 1/10s
