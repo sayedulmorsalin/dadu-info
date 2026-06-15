@@ -2,8 +2,10 @@ import {
   Download,
   Facebook,
   Footprints,
+  Instagram,
   MapPin,
   MessageCircle,
+  Music,
   PackageCheck,
   Phone,
   ShieldCheck,
@@ -28,6 +30,8 @@ const shop = {
     "One of Bangladesh's best sports equipment shops, offering high-quality football boots, goalkeeper gloves, and full combo kits at great prices.",
   youtubeUrl: "https://www.youtube.com/@dadukhelaghor",
   facebookUrl: "https://www.facebook.com/profile.php?id=100094599728841",
+  instagramUrl: "https://www.instagram.com/dadukhelaghor/",
+  tiktokUrl: "https://www.tiktok.com/@dadukhelaghor",
   appUrl: "https://play.google.com/store/apps/details?id=com.sayedulmarsalin.dadu",
   contactName: "Russell",
   lastChecked: "June 14, 2026",
@@ -85,7 +89,7 @@ const moderators = [
     contact: "01782124891",
     displayContact: "+880 1782-124891",
     responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
-    icon: Phone,
+    icon: UserCheck,
     isWhatsapp: true,
   },
   {
@@ -94,7 +98,7 @@ const moderators = [
     contact: "01787208108",
     displayContact: "+880 1787-208108",
     responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
-    icon: Phone,
+    icon: UserCheck,
     isWhatsapp: true,
   },
   {
@@ -102,8 +106,8 @@ const moderators = [
     role: "Moderator",
     contact: "01992627866",
     displayContact: "+880 1992-627866",
-    responsibility: "Manages group membership, moderation, and customer communications.",
-    icon: ShieldCheck,
+    responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
+    icon: UserCheck,
     isWhatsapp: true,
   },
   {
@@ -111,7 +115,7 @@ const moderators = [
     role: "Moderator",
     contact: "01308190735",
     displayContact: "+880 1308-190735",
-    responsibility: "Moderates group content and supports customer inquiries.",
+    responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
     icon: UserCheck,
     isWhatsapp: true,
   },
@@ -120,7 +124,7 @@ const moderators = [
     role: "Moderator",
     contact: "01779455940",
     displayContact: "+880 1779-455940",
-    responsibility: "Assists with community management and order updates.",
+    responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
     icon: UserCheck,
     isWhatsapp: true,
   },
@@ -129,8 +133,8 @@ const moderators = [
     role: "Moderator",
     contact: "01787208161",
     displayContact: "+8801787208161",
-    responsibility: "Keeps product videos, new arrivals, and public updates organized for customers.",
-    icon: ShieldCheck,
+    responsibility: "Receives WhatsApp orders, confirms stock, sizes, and delivery details.",
+    icon: UserCheck,
     isWhatsapp: true,
   },
 ];
@@ -231,6 +235,39 @@ export default function Home() {
             >
               <Facebook size={18} />
               Facebook Page
+            </a>
+            <a
+              className="primaryButton"
+              href={shop.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="btn-instagram"
+              aria-label="Visit Dadu Khelaghor Instagram page"
+            >
+              <Instagram size={18} />
+              Instagram Page
+            </a>
+            <a
+              className="primaryButton"
+              href={shop.tiktokUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="btn-tiktok"
+              aria-label="Visit Dadu Khelaghor TikTok page"
+            >
+              <Music size={18} />
+              TikTok Page
+            </a>
+
+              <a className="primaryButton"
+              href={shop.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              id="btn-youtube"
+              aria-label="Visit Dadu Khelaghor YouTube channel"
+            >
+              <Youtube size={18} />
+              YouTube Channel
             </a>
           </div>
         </div>
@@ -404,6 +441,17 @@ export default function Home() {
           </p>
         </div>
         <div className="contactGrid">
+
+          <a
+            href={shop.appUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            id="contact-whatsapp"
+            aria-label="Download Dadu Khelaghor app to browse products and place orders"
+          >
+            <Download size={22} aria-hidden="true" />
+            <span>Order via Dadu App</span>
+          </a>
           <a
             href={shop.facebookUrl}
             target="_blank"
@@ -413,6 +461,14 @@ export default function Home() {
           >
             <Facebook size={22} aria-hidden="true" />
             <span>Dadu Khelaghor on Facebook</span>
+          </a>
+          <a href={shop.instagramUrl} target="_blank" rel="noopener noreferrer" id="contact-instagram" aria-label="Follow Dadu Khelaghor on Instagram for product photos and updates">
+            <Instagram size={22} aria-hidden="true" />
+            <span>Dadu Khelaghor on Instagram</span>
+          </a>
+          <a href={shop.tiktokUrl} target="_blank" rel="noopener noreferrer" id="contact-tiktok" aria-label="Follow Dadu Khelaghor on TikTok for product videos and updates">
+            <Music size={22} aria-hidden="true" />
+            <span>Dadu Khelaghor on TikTok</span>
           </a>
           <a
             href={shop.youtubeUrl}
@@ -424,16 +480,7 @@ export default function Home() {
             <Youtube size={22} aria-hidden="true" />
             <span>Dadu Khelaghor on YouTube</span>
           </a>
-          <a
-            href={shop.appUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            id="contact-whatsapp"
-            aria-label="Download Dadu Khelaghor app to browse products and place orders"
-          >
-            <Phone size={22} aria-hidden="true" />
-            <span>Order via Dadu App</span>
-          </a>
+          
         </div>
       </section>
     </main>
