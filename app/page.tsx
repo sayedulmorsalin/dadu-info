@@ -5,7 +5,6 @@ import {
   Instagram,
   MapPin,
   MessageCircle,
-  Music,
   PackageCheck,
   Phone,
   ShieldCheck,
@@ -17,6 +16,7 @@ import {
   Youtube,
   Zap,
 } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 import BootBackground from "./BootBackground";
 import icon from "../assets/icon.jpg";
 
@@ -31,7 +31,7 @@ const shop = {
   youtubeUrl: "https://www.youtube.com/@dadukhelaghor",
   facebookUrl: "https://www.facebook.com/profile.php?id=100094599728841",
   instagramUrl: "https://www.instagram.com/dadukhelaghor/",
-  tiktokUrl: "https://www.tiktok.com/@dadukhelaghor",
+  tiktokUrl: "https://www.tiktok.com/@dadukhelaghor1",
   appUrl: "https://play.google.com/store/apps/details?id=com.sayedulmarsalin.dadu",
   contactName: "Russell",
   lastChecked: "June 14, 2026",
@@ -255,7 +255,7 @@ export default function Home() {
               id="btn-tiktok"
               aria-label="Visit Dadu Khelaghor TikTok page"
             >
-              <Music size={18} />
+              <FaTiktok size={18} aria-hidden="true" />
               TikTok Page
             </a>
 
@@ -467,7 +467,7 @@ export default function Home() {
             <span>Dadu Khelaghor on Instagram</span>
           </a>
           <a href={shop.tiktokUrl} target="_blank" rel="noopener noreferrer" id="contact-tiktok" aria-label="Follow Dadu Khelaghor on TikTok for product videos and updates">
-            <Music size={22} aria-hidden="true" />
+            <FaTiktok size={22} aria-hidden="true" />
             <span>Dadu Khelaghor on TikTok</span>
           </a>
           <a
