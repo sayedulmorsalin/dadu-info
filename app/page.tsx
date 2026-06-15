@@ -25,7 +25,7 @@ const shop = {
   businessType: "Sports Equipment",
   audience: "Football players, athletes & sports enthusiasts",
   tagline:
-    "Bangladesh's one of the best sports equipment Shop and  very good quality football boots, goalkeeper gloves, and full combo kits at great prices.",
+    "One of Bangladesh's best sports equipment shops, offering high-quality football boots, goalkeeper gloves, and full combo kits at great prices.",
   youtubeUrl: "https://www.youtube.com/@dadukhelaghor",
   facebookUrl: "https://www.facebook.com/profile.php?id=100094599728841",
   appUrl: "https://play.google.com/store/apps/details?id=com.sayedulmarsalin.dadu",
@@ -49,7 +49,7 @@ const categories = [
   {
     title: "Full Combo Kits",
     description:
-      "Complete combo sets bundling boots, gloves, and gear — great value starting from 3,600 BDT.",
+      "Complete combo sets bundling boots, gloves, and gear — great value .",
     icon: ShoppingBag,
   },
   {
@@ -206,7 +206,7 @@ export default function Home() {
         <div className="heroOverlay" />
         <div className="heroContent">
           <p className="eyebrow">Sports Equipment · {shop.location}</p>
-          <h1>{shop.name} - Premium Football Boots & Sports Gear Bangladesh</h1>
+          <h1>{shop.name} - Premium Football Boots & Sports Gear in Bangladesh</h1>
           <p className="banglaName">{shop.banglaName}</p>
           <p className="heroText">{shop.tagline}</p>
           <div className="heroActions">
