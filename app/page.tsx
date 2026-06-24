@@ -15,7 +15,13 @@ import {
   UserCheck,
   Youtube,
   Zap,
+  BookOpen,
+  ShoppingCart,
+  CreditCard,
+  RefreshCcw,
+  ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
 import { FaTiktok } from "react-icons/fa";
 import BootBackground from "./BootBackground";
 import icon from "../assets/icon.jpg";
@@ -79,7 +85,8 @@ const facts = [
   { label: "Location", value: shop.location },
   { label: "Facebook page", value: "Dadu Khelaghor" },
   { label: "Audience", value: shop.audience },
-  
+  { label: "Owner", value: "Ahsanul Haque Siam" },
+  { label: "Developer", value: "Sayedul Marsalin" },
 ];
 
 const moderators = [
@@ -202,6 +209,7 @@ export default function Home() {
           <a href="#about" aria-label="Learn about Dadu Khelaghor">About Dadu Khelaghor</a>
           <a href="#moderators" aria-label="View moderator contacts">Moderators</a>
           <a href="#contact" aria-label="Contact Dadu Khelaghor">Contact</a>
+          <Link href="/help" aria-label="Visit Dadu Khelaghor Help Center" style={{ color: 'var(--accent)', fontWeight: 900 }}>Help Center</Link>
         </div>
       </nav>
 
@@ -428,6 +436,69 @@ export default function Home() {
               </article>
             );
           })}
+        </div>
+      </section>
+
+      <section className="section helpCenterSection" aria-label="Help Center links for Dadu Khelaghor">
+        <div className="sectionHeader">
+          <p className="sectionLabel">Help Center</p>
+          <h2>Quick guides &amp; support articles.</h2>
+        </div>
+        <div className="helpCenterGrid">
+          <Link href="/help/how-to-place-order" className="helpCenterCard" id="help-place-order">
+            <ShoppingCart size={24} aria-hidden="true" />
+            <div>
+              <h3>How to Place Order</h3>
+              <p>Step-by-step guide to placing your first order on the DADU app.</p>
+            </div>
+            <ChevronRight size={18} className="helpCenterArrow" />
+          </Link>
+          <Link href="/help/payment-methods" className="helpCenterCard" id="help-payment">
+            <CreditCard size={24} aria-hidden="true" />
+            <div>
+              <h3>Payment Methods</h3>
+              <p>Learn how to pay with Bkash, Nagad, or Rocket.</p>
+            </div>
+            <ChevronRight size={18} className="helpCenterArrow" />
+          </Link>
+          <Link href="/help/delivery-information" className="helpCenterCard" id="help-delivery">
+            <Truck size={24} aria-hidden="true" />
+            <div>
+              <h3>Delivery Information</h3>
+              <p>Timelines, tracking, and delivery zones across Bangladesh.</p>
+            </div>
+            <ChevronRight size={18} className="helpCenterArrow" />
+          </Link>
+          <Link href="/help/return-policy" className="helpCenterCard" id="help-returns">
+            <RefreshCcw size={24} aria-hidden="true" />
+            <div>
+              <h3>Return Policy</h3>
+              <p>Report damaged or wrong products within 48 hours.</p>
+            </div>
+            <ChevronRight size={18} className="helpCenterArrow" />
+          </Link>
+          <Link href="/help/delete-account" className="helpCenterCard" id="help-delete-account">
+            <ShieldCheck size={24} aria-hidden="true" />
+            <div>
+              <h3>Delete Account</h3>
+              <p>How to permanently delete your DADU account.</p>
+            </div>
+            <ChevronRight size={18} className="helpCenterArrow" />
+          </Link>
+          <Link href="/help/contact-support" className="helpCenterCard" id="help-contact">
+            <MessageCircle size={24} aria-hidden="true" />
+            <div>
+              <h3>Contact Support</h3>
+              <p>Reach our team via email or phone for any issue.</p>
+            </div>
+            <ChevronRight size={18} className="helpCenterArrow" />
+          </Link>
+        </div>
+        <div style={{ marginTop: '32px', textAlign: 'center' }}>
+          <Link href="/help" className="primaryButton" style={{ display: 'inline-flex', margin: '0 auto' }}>
+            <BookOpen size={18} />
+            View All Help Articles
+          </Link>
         </div>
       </section>
 
