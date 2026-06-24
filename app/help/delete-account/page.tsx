@@ -15,7 +15,7 @@ import "../../globals.css";
 import "../help.css";
 
 export const metadata: Metadata = {
-  title: "Delete Account | Dadu Khelaghor Help Center",
+  title: "Delete Account",
   description:
     "Learn how to delete your DADU app account. Navigate to your profile page and use the Delete Account button to permanently remove your account.",
 };
@@ -139,8 +139,8 @@ export default function DeleteAccount() {
                   dadukhelaghor@gmail.com
                 </a>{" "}
                 or call{" "}
-                <a href="tel:+8801782124891" style={{ color: "var(--accent)", fontWeight: 700 }}>
-                  +8801782124891
+                <a href="tel:01743164466" style={{ color: "var(--accent)", fontWeight: 700 }}>
+                  01743164466
                 </a>.
               </p>
             </div>

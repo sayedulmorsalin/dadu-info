@@ -16,9 +16,9 @@ import "../../globals.css";
 import "../help.css";
 
 export const metadata: Metadata = {
-  title: "Contact Support | Dadu Khelaghor Help Center",
+  title: "Contact Support",
   description:
-    "Contact Dadu Khelaghor support. Email: dadukhelaghor@gmail.com. Phone: +8801782124891. Developer: Md. Sayedul Morsalin.",
+    "Contact Dadu Khelaghor support. Email: dadukhelaghor@gmail.com. Phone: 01743164466. Developer: Md. Sayedul Morsalin.",
 };
 
 const contactChannels = [
@@ -34,9 +34,9 @@ const contactChannels = [
   },
   {
     icon: Phone,
-    title: "Phone Support",
-    value: "+8801782124891",
-    href: "tel:+8801782124891",
+    title: "Phone Support (Tamim)",
+    value: "01743164466",
+    href: "tel:01743164466",
     description: "Call us directly for urgent order issues, payment problems, or delivery concerns.",
     responseTime: "Immediate",
     color: "#10b981",
@@ -130,20 +130,7 @@ export default function ContactSupport() {
             })}
           </div>
 
-          <div className="developerCard">
-            <div className="developerIcon">
-              <User size={32} />
-            </div>
-            <div className="developerInfo">
-              <div className="developerBadge">App Developer</div>
-              <h3>Md. Sayedul Morsalin</h3>
-              <p>Developer of the DADU Khelaghor App</p>
-              <a href="mailto:sayadulmorsalin123@gmail.com" className="developerEmail">
-                <Mail size={14} />
-                sayadulmorsalin123@gmail.com
-              </a>
-            </div>
-          </div>
+          
 
           <h2 className="helpSectionTitle" style={{ marginTop: "48px" }}>Frequently Asked Questions</h2>
 

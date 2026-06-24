@@ -16,7 +16,7 @@ import "../../globals.css";
 import "../help.css";
 
 export const metadata: Metadata = {
-  title: "Return Policy | Dadu Khelaghor Help Center",
+  title: "Return Policy",
   description:
     "Learn about Dadu Khelaghor's return policy. Contact support within 48 hours for damaged or incorrect products with your Order ID and product photo.",
 };
@@ -43,7 +43,7 @@ const returnSteps = [
     icon: MessageCircle,
     title: "Contact Our Support Team",
     description:
-      "Reach out to our support team via email at dadukhelaghor@gmail.com or call +8801782124891 with your details.",
+      "Reach out to our support team via email at dadukhelaghor@gmail.com or call 01743164466 with your details.",
     color: "#8b5cf6",
   },
   {

@@ -15,7 +15,7 @@ import "../globals.css";
 import "./help.css";
 
 export const metadata: Metadata = {
-  title: "Help Center | Dadu Khelaghor",
+  title: "Help Center",
   description:
     "Dadu Khelaghor Help Center — Find guides on how to place orders, payment methods, delivery information, return policy, account deletion, and contact support.",
 };

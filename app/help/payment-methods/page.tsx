@@ -15,7 +15,7 @@ import "../../globals.css";
 import "../help.css";
 
 export const metadata: Metadata = {
-  title: "Payment Methods | Dadu Khelaghor Help Center",
+  title: "Payment Methods",
   description:
     "Learn about accepted payment methods at Dadu Khelaghor. We support Mobile Banking via Bkash, Nagad, and Rocket. Upload your payment proof during checkout.",
 };

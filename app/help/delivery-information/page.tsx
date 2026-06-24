@@ -15,7 +15,7 @@ import "../../globals.css";
 import "../help.css";
 
 export const metadata: Metadata = {
-  title: "Delivery Information | Dadu Khelaghor Help Center",
+  title: "Delivery Information",
   description:
     "Learn about delivery times, areas, and tracking for Dadu Khelaghor orders. Rajshahi: 1-3 days. Outside Rajshahi: 3-7 working days.",
 };

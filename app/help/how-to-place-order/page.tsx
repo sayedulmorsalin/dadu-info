@@ -15,7 +15,7 @@ import "../../globals.css";
 import "../help.css";
 
 export const metadata: Metadata = {
-  title: "How to Place Order | Dadu Khelaghor Help Center",
+  title: "How to Place Order",
   description:
     "Step-by-step guide on how to place an order on the DADU app. Browse products, add to cart, confirm delivery address, and upload payment proof.",
 };

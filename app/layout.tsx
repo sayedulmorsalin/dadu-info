@@ -3,7 +3,10 @@ import "./globals.css";
 import iconJpg from "../assets/icon.jpg";
 
 export const metadata: Metadata = {
-  title: "Dadu Khelaghor | দাদু খেলাঘর — Best Football Boots & Sports Equipment Bangladesh",
+  title: {
+    template: "%s | Dadu Khelaghor",
+    default: "Dadu Khelaghor | দাদু খেলাঘর — Best Football Boots & Sports Equipment Bangladesh",
+  },
   description:
     "Dadu Khelaghor (দাদু খেলাঘর) - Bangladesh's premier sports equipment shop. Buy premium football boots (Adidas F50), goalkeeper gloves, and full combo kits. Genuine quality at great prices. Order via WhatsApp: +880 1787-208108 | Free delivery across Bangladesh.",
   keywords: "football boots Bangladesh, goalkeeper gloves, sports equipment, Adidas F50, football cleats, sports gear Bangladesh, Rajshahi",

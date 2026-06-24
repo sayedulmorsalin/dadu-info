@@ -81,12 +81,12 @@ const highlights = [
 const facts = [
   { label: "Brand name", value: shop.name },
   { label: "Bangla name", value: shop.banglaName },
+  { label: "Owner", value: "Ahsanul Haque Siam" },
   { label: "Category", value: "Sports equipment / football gear" },
   { label: "Location", value: shop.location },
   { label: "Facebook page", value: "Dadu Khelaghor" },
   { label: "Audience", value: shop.audience },
-  { label: "Owner", value: "Ahsanul Haque Siam" },
-  { label: "Developer", value: "Sayedul Marsalin" },
+  
 ];
 
 const moderators = [
@@ -361,40 +361,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section trustSection" aria-label="Why choose Dadu Khelaghor">
-        <div className="sectionHeader">
-          <p className="sectionLabel">Why choose Dadu Khelaghor</p>
-          <h2>Gear up with Bangladesh&apos;s trusted sports shop.</h2>
-        </div>
-        <div className="trustGrid">
-          <article>
-            <ShieldCheck size={26} aria-hidden="true" />
-            <h3>Quality gear</h3>
-            <p>
-              Genuine football boots and goalkeeper gloves from trusted brands
-              like Adidas — verified through Facebook product showcases and 
-              customer testimonials.
-            </p>
-          </article>
-          <article>
-            <Star size={26} aria-hidden="true" />
-            <h3>Active channel</h3>
-            <p>
-              Regular product videos on Facebook keep you updated on new arrivals,
-              prices, and seasonal combo offers. Our active community ensures 
-              responsive customer service.
-            </p>
-          </article>
-          <article>
-            <Truck size={26} aria-hidden="true" />
-            <h3>Delivery across Bangladesh</h3>
-            <p>
-              Order via Dadu App or WhatsApp and have your sports gear delivered across
-              Bangladesh quickly and conveniently with reliable courier services.
-            </p>
-          </article>
-        </div>
-      </section>
+
 
       <section className="section moderatorSection" id="moderators" aria-label="Dadu Khelaghor moderator team and contacts">
         <div className="sectionHeader">
