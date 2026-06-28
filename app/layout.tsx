@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     shortcut: "/images/favicon-32x32.png",
     apple: "/images/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://dadu-khelaghor.vercel.app"),
+  metadataBase: new URL("https://dadufans.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://dadu-khelaghor.vercel.app",
+    url: "https://dadufans.com",
     siteName: "Dadu Khelaghor",
     title: "Dadu Khelaghor | দাদু খেলাঘর — Football Boots & Sports Equipment Bangladesh",
     description:
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
     address: true,
   },
   alternates: {
-    canonical: "https://dadu-khelaghor.vercel.app",
+    canonical: "https://dadufans.com",
     languages: {
-      "en-US": "https://dadu-khelaghor.vercel.app/en",
-      "bn-BD": "https://dadu-khelaghor.vercel.app/bn",
+      "en-US": "https://dadufans.com/en",
+      "bn-BD": "https://dadufans.com/bn",
     },
   },
   referrer: "strict-origin-when-cross-origin",
@@ -88,8 +88,8 @@ export default function RootLayout({
     "@type": ["Organization", "LocalBusiness"],
     name: "Dadu Khelaghor",
     alternateName: "দাদু খেলাঘর",
-    url: "https://dadu-khelaghor.vercel.app",
-    logo: "https://dadu-khelaghor.vercel.app/images/logo.png",
+    url: "https://dadufans.com",
+    logo: "https://dadufans.com/images/logo.png",
     description:
       "Bangladesh's premier sports equipment shop specializing in football boots, goalkeeper gloves, and sports combo kits.",
     sameAs: [
@@ -99,10 +99,38 @@ export default function RootLayout({
     ],
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Shaheb Bazar",
       addressLocality: "Rajshahi",
       addressRegion: "Rajshahi",
+      postalCode: "6000",
       addressCountry: "BD",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 24.3636,
+      longitude: 88.6241
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        opens: "09:00",
+        closes: "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "14:00",
+        closes: "21:00"
+      }
+    ],
     areaServed: "BD",
     contactPoint: {
       "@type": "ContactPoint",
@@ -110,6 +138,11 @@ export default function RootLayout({
       telephone: "+880-1787-208108",
     },
     priceRange: "BDT 2000-15000",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      reviewCount: "87"
+    }
   };
 
   return (

@@ -156,7 +156,7 @@ export default function Home() {
       position: idx + 1,
       name: cat.title,
       description: cat.description,
-      image: "https://dadu-khelaghor.vercel.app/images/products.png",
+      image: "https://dadufans.com/images/products.png",
     })),
   };
 
@@ -361,7 +361,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO Content Sections */}
+      <section className="section seoContentSection" id="seo-guides" aria-label="Guides and Information on Football Boots">
+        <div className="sectionHeader">
+          <p className="sectionLabel">Comprehensive Guide</p>
+          <h2>Everything You Need to Know About Football Shoes in Bangladesh</h2>
+        </div>
+        <article className="seoArticle">
+          <h3>Why Choose Dadu Khelaghor?</h3>
+          <p>
+            When looking to <strong>buy football boots online in Bangladesh</strong>, players often face challenges with authenticity and pricing. At Dadu Khelaghor, we have established ourselves as the premier <strong>football shop in Bangladesh</strong>, rooted in Rajshahi but delivering nationwide. Whether you need professional-grade <strong>adidas football boots Bangladesh</strong> or reliable <strong>nike football boots Bangladesh</strong>, we ensure you receive 100% genuine products. Our rigorous quality checks mean that every pair of <strong>football shoes in Bangladesh</strong> we sell meets the highest standards. Beyond boots, we are the go-to destination for <strong>goalkeeper gloves Bangladesh</strong> and essential <strong>football accessories Bangladesh</strong>. We don't just sell equipment; we equip athletes to perform their best on the pitch.
+          </p>
 
+          <h3>How to Choose Football Boots?</h3>
+          <p>
+            Selecting the right <strong>football shoes in Bangladesh</strong> depends on your playing surface, position, and foot shape. For natural grass, Firm Ground (FG) boots with molded studs are ideal. If you are playing on artificial turf, which is increasingly popular in Dhaka and Rajshahi, you need specific <strong>futsal shoes Bangladesh</strong> or Artificial Grass (AG) boots to prevent injury and ensure maximum grip. Attackers might prefer lightweight boots like the Adidas F50 for speed, while midfielders might opt for control-focused boots like the Nike Phantom or Adidas Predator. Always consider the upper material—synthetic materials offer durability and are easy to clean, whereas premium leather provides a custom-like fit and superior touch.
+          </p>
+
+          <h3>Adidas vs Nike Boots</h3>
+          <p>
+            The debate between Adidas and Nike is as old as the game itself. When it comes to <strong>adidas football boots Bangladesh</strong>, players praise the brand for its innovative technologies, wider fit options, and classic silos like the Predator and Copa. The Adidas F50 Elite, for example, is renowned for its explosive speed and lightweight Sprintframe. On the other hand, <strong>nike football boots Bangladesh</strong> are celebrated for their sleek aesthetics, Flyknit technology, and the Mercurial series which is favored by the fastest players globally. Both brands offer exceptional quality. Your choice ultimately boils down to your foot shape and personal preference. Dadu Khelaghor stocks the latest models from both giants to ensure you find your perfect match.
+          </p>
+
+          <h3>Boot Size Guide</h3>
+          <p>
+            Getting the right size is crucial for both performance and comfort. Unlike regular sneakers, football boots should fit snugly, leaving minimal space at the toe (about a thumb's width). When measuring your feet for <strong>football shoes in Bangladesh</strong>, do so in the afternoon when your feet are slightly swollen, and wear the socks you intend to play in. Remember that leather boots will stretch over time, molding to your feet, while synthetic boots retain their shape. If you have wide feet, look into specific models known for a wider toe box. Don't hesitate to reach out to our moderators at our <strong>football boot Rajshahi</strong> headquarters for personalized sizing advice.
+          </p>
+
+          <h3>Football Boot Maintenance</h3>
+          <p>
+            Proper maintenance extends the life of your <strong>sports equipment Bangladesh</strong> significantly. After a match, never leave your muddy boots in a plastic bag. Let them air out naturally, away from direct heat sources like radiators or the harsh midday sun, which can crack the materials. Use a soft brush and warm water to remove dirt from the upper and the soleplate. For leather boots, applying a specialized leather balsam or dubbin periodically keeps the material supple and prevents cracking. Taking care of your gear ensures that your investment in premium <strong>adidas football boots Bangladesh</strong> or <strong>nike football boots Bangladesh</strong> lasts season after season.
+          </p>
+
+          <h3>Delivery Across Bangladesh</h3>
+          <p>
+            No matter where you are, getting the best <strong>football accessories Bangladesh</strong> has never been easier. We offer rapid and secure delivery services across the entire country. From our central hub for <strong>football boot Rajshahi</strong>, we dispatch orders daily. You can track your package every step of the way, ensuring that whether you are in a bustling city or a remote town, you receive your gear promptly. We understand the excitement of waiting for new <strong>goalkeeper gloves Bangladesh</strong> or a fresh pair of boots, which is why we partner with the most reliable courier services to get your <strong>sports equipment Bangladesh</strong> to your doorstep safely. <strong>Buy football boots online Bangladesh</strong> today and experience the Dadu Khelaghor difference!
+          </p>
+        </article>
+      </section>
 
       <section className="section moderatorSection" id="moderators" aria-label="Dadu Khelaghor moderator team and contacts">
         <div className="sectionHeader">

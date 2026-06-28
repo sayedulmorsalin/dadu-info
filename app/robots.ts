@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://dadu-khelaghor.vercel.app'
+  const baseUrl = 'https://dadufans.com'
 
   return {
     rules: {

@@ -111,7 +111,7 @@ const nextConfig = {
 
   // Environment
   env: {
-    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || "https://dadu-khelaghor.vercel.app",
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || "https://dadufans.com",
   },
 };
 
