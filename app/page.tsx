@@ -558,6 +558,31 @@ export default function Home() {
           
         </div>
       </section>
+
+      {/* Developer Segment */}
+      <section className="section developerSection" aria-label="Developer and Technical Support" style={{
+        marginTop: '60px',
+        padding: '40px 20px',
+        backgroundColor: '#111',
+        color: '#fff',
+        borderRadius: '16px',
+        textAlign: 'center',
+        border: '1px solid #333'
+      }}>
+        <p className="sectionLabel" style={{ color: 'var(--accent)', marginBottom: '10px' }}>Developer &amp; Technical Support</p>
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>Md. Sayedul Marsalin</h3>
+        <p style={{ marginBottom: '10px', color: '#ccc' }}>
+          For technical inquiries, app support, or website issues, please contact the developer directly.
+        </p>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap', marginTop: '20px' }}>
+          <a href="mailto:sayadulmorsalin123@gmail.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: '#fff', textDecoration: 'none', padding: '10px 20px', backgroundColor: '#222', borderRadius: '8px', border: '1px solid #444' }}>
+            ✉️ sayadulmorsalin123@gmail.com
+          </a>
+          <a href="https://sayedulmarsalin.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: '#fff', textDecoration: 'none', padding: '10px 20px', backgroundColor: '#222', borderRadius: '8px', border: '1px solid #444' }}>
+            🌐 sayedulmarsalin.vercel.app
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
