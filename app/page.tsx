@@ -146,17 +146,54 @@ const moderators = [
   },
 ];
 
+const featuredProducts = [
+  {
+    name: "MastarCopy Football boot Nike mercurial vapor 17",
+    price: "2400",
+    image: "https://pub-6469d0a14b2b42a48390be0738ebb3b3.r2.dev/img20_1782222488894.jpg",
+    brand: "Nike"
+  },
+  {
+    name: "Mastarcopy Adidas F50 hyperfast",
+    price: "2400",
+    image: "https://pub-6469d0a14b2b42a48390be0738ebb3b3.r2.dev/img20_1782222415304.jpg",
+    brand: "Adidas"
+  },
+  {
+    name: "Combo 5 Pcs DADU brand athletic socks paired with included Player-themed shin guards",
+    price: "1100",
+    image: "https://pub-6469d0a14b2b42a48390be0738ebb3b3.r2.dev/img20_1782276878583.jpg",
+    brand: "Combo Pack"
+  },
+  {
+    name: "2 In 1 Sports Game Pant Premium Quality",
+    price: "350",
+    image: "https://pub-6469d0a14b2b42a48390be0738ebb3b3.r2.dev/img20_1782355807284.jpg",
+    brand: "Pant"
+  }
+];
+
 export default function Home() {
   // Structured data for product schema
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: categories.map((cat, idx) => ({
+    itemListElement: featuredProducts.map((prod, idx) => ({
       "@type": "Product",
       position: idx + 1,
-      name: cat.title,
-      description: cat.description,
-      image: "https://dadufans.com/images/products.png",
+      name: prod.name,
+      image: prod.image,
+      brand: {
+        "@type": "Brand",
+        name: prod.brand
+      },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "BDT",
+        price: prod.price,
+        availability: "https://schema.org/InStock",
+        url: shop.appUrl
+      }
     })),
   };
 
@@ -358,6 +395,29 @@ export default function Home() {
               </article>
             );
           })}
+        </div>
+      </section>
+
+      <section className="section featuredProductsSection" id="featured-products" aria-label="Featured Products at Dadu Khelaghor">
+        <div className="sectionHeader">
+          <p className="sectionLabel">Top Deals</p>
+          <h2>Featured Products</h2>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', padding: '20px 0' }}>
+          {featuredProducts.map((prod, idx) => (
+            <article key={idx} style={{ backgroundColor: '#fff', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.05)', display: 'flex', flexDirection: 'column' }}>
+              <img src={prod.image} alt={prod.name} style={{ width: '100%', height: '280px', objectFit: 'cover' }} loading="lazy" />
+              <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                <span style={{ fontSize: '0.85rem', color: '#888', textTransform: 'uppercase', letterSpacing: '1px' }}>{prod.brand}</span>
+                <h3 style={{ fontSize: '1.2rem', margin: '8px 0', color: '#333' }}>{prod.name}</h3>
+                <p style={{ fontSize: '1.4rem', fontWeight: 'bold', color: 'var(--accent)', marginTop: 'auto', marginBottom: '16px' }}>BDT {prod.price}</p>
+                <a href={shop.appUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', backgroundColor: 'var(--accent)', color: '#fff', padding: '12px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold', transition: 'background-color 0.2s' }}>
+                  <Download size={18} />
+                  Download App to Order
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
