@@ -23,7 +23,7 @@ Official website for Dadu Khelaghor, Bangladesh's premier sports equipment shop.
    | Setting | Value |
    |---|---|
    | **Framework preset** | None |
-   | **Build command** | `npx opennextjs-cloudflare build` |
+   | **Build command** | `npm run pages:build` |
    | **Build output directory** | `.open-next/assets` |
    | **Node.js version** | `20` (set in Environment Variables: `NODE_VERSION = 20`) |
 
