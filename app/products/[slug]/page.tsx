@@ -98,6 +98,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+export function generateStaticParams() {
+  return Object.keys(productsData).map((slug) => ({
+    slug: slug,
+  }));
+}
+
 export default function ProductPage({ params }: { params: { slug: string } }) {
   const product = productsData[params.slug];
 

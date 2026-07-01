@@ -128,6 +128,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
+export function generateStaticParams() {
+  return Object.keys(blogData).map((slug) => ({
+    slug: slug,
+  }));
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = blogData[params.slug];
 
