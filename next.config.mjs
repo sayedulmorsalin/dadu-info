@@ -111,7 +111,7 @@ const nextConfig = {
 
   // Environment
   env: {
-    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || "https://dadufans.com",
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || "https://dadubd.com",
   },
 };
 

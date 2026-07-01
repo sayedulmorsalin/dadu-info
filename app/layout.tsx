@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     shortcut: "/images/favicon-32x32.png",
     apple: "/images/apple-touch-icon.png",
   },
-  metadataBase: new URL("https://dadufans.com"),
+  metadataBase: new URL("https://dadubd.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://dadufans.com",
+    url: "https://dadubd.com",
     siteName: "Dadu Khelaghor",
     title: "Dadu Khelaghor | দাদু খেলাঘর — Football Boots & Sports Equipment Bangladesh",
     description:
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
     address: true,
   },
   alternates: {
-    canonical: "https://dadufans.com",
+    canonical: "https://dadubd.com",
     languages: {
-      "en-US": "https://dadufans.com/en",
-      "bn-BD": "https://dadufans.com/bn",
+      "en-US": "https://dadubd.com/en",
+      "bn-BD": "https://dadubd.com/bn",
     },
   },
   referrer: "strict-origin-when-cross-origin",
@@ -88,8 +88,8 @@ export default function RootLayout({
     "@type": ["Organization", "LocalBusiness"],
     name: "Dadu Khelaghor",
     alternateName: "দাদু খেলাঘর",
-    url: "https://dadufans.com",
-    logo: "https://dadufans.com/images/logo.png",
+    url: "https://dadubd.com",
+    logo: "https://dadubd.com/images/logo.png",
     description:
       "Bangladesh's premier sports equipment shop specializing in football boots, goalkeeper gloves, and sports combo kits.",
     sameAs: [

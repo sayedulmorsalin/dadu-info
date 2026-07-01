@@ -93,7 +93,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: `${product.name} | Buy Online in Bangladesh`,
     description: product.description,
     alternates: {
-      canonical: `https://dadufans.com/products/${product.slug}`,
+      canonical: `https://dadubd.com/products/${product.slug}`,
     }
   };
 }
@@ -109,7 +109,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.name,
-    "image": `https://dadufans.com${product.image}`,
+    "image": `https://dadubd.com${product.image}`,
     "description": product.description,
     "brand": {
       "@type": "Brand",
@@ -117,7 +117,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://dadufans.com/products/${product.slug}`,
+      "url": `https://dadubd.com/products/${product.slug}`,
       "priceCurrency": "BDT",
       "price": product.price,
       "availability": product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
@@ -137,12 +137,12 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://dadufans.com/"
+      "item": "https://dadubd.com/"
     },{
       "@type": "ListItem",
       "position": 2,
       "name": product.category,
-      "item": "https://dadufans.com/#products"
+      "item": "https://dadubd.com/#products"
     },{
       "@type": "ListItem",
       "position": 3,

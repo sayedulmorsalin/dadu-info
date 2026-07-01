@@ -123,7 +123,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: `${post.title} | Dadu Khelaghor Blog`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://dadufans.com/blog/${post.slug}`,
+      canonical: `https://dadubd.com/blog/${post.slug}`,
     }
   };
 }
@@ -140,14 +140,14 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     "@type": "Article",
     "headline": post.title,
     "image": [
-      `https://dadufans.com${post.image}`
+      `https://dadubd.com${post.image}`
     ],
     "datePublished": `${post.date}T08:00:00+08:00`,
     "dateModified": `${post.date}T08:00:00+08:00`,
     "author": [{
         "@type": "Person",
         "name": post.author,
-        "url": "https://dadufans.com/#about"
+        "url": "https://dadubd.com/#about"
       }]
   };
 
@@ -158,12 +158,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://dadufans.com/"
+      "item": "https://dadubd.com/"
     },{
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://dadufans.com/blog"
+      "item": "https://dadubd.com/blog"
     },{
       "@type": "ListItem",
       "position": 3,
