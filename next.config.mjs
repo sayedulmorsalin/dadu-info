@@ -1,113 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // SEO and Performance optimizations
-  compress: true,
-  poweredByHeader: false,
+  output: 'export',
   
-  // Security headers
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-          {
-            key: "X-XSS-Protection",
-            value: "1; mode=block",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
-          },
-        ],
-      },
-      {
-        source: "/sitemap.xml",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "application/xml",
-          },
-          {
-            key: "Cache-Control",
-            value: "public, max-age=86400",
-          },
-        ],
-      },
-      {
-        source: "/robots.txt",
-        headers: [
-          {
-            key: "Content-Type",
-            value: "text/plain",
-          },
-          {
-            key: "Cache-Control",
-            value: "public, max-age=86400",
-          },
-        ],
-      },
-    ];
-  },
-
-  // Redirects
-  async redirects() {
-    return [
-      {
-        source: "/about",
-        destination: "/#about",
-        permanent: true,
-      },
-      {
-        source: "/products",
-        destination: "/#products",
-        permanent: true,
-      },
-      {
-        source: "/contact",
-        destination: "/#contact",
-        permanent: true,
-      },
-      {
-        source: "/moderators",
-        destination: "/#moderators",
-        permanent: true,
-      },
-    ];
-  },
-
-  // Image optimization
+  // Disable image optimization since this is a static export
   images: {
-    formats: ["image/avif", "image/webp"],
-    dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    unoptimized: true,
   },
-
-  // Turbopack configuration (Next.js 16 uses Turbopack by default)
-  turbopack: {},
-
-  // Enable SWR caching
-  onDemandEntries: {
-    maxInactiveAge: 60 * 1000,
-    pagesBufferLength: 5,
-  },
-
-  // Performance monitoring
-  productionBrowserSourceMaps: false,
-
-  // Trailing slash
-  trailingSlash: false,
 
   // Environment
   env: {
@@ -116,3 +14,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
