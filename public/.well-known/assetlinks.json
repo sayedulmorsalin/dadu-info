@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sayedulmarsalin.dadu",
+      "sha256_cert_fingerprints": [
+        "35:31:11:33:B5:D3:2F:BF:EA:C7:29:10:82:E6:96:6B:48:25:80:D6:98:81:7E:71:9A:D4:1D:F7:41:97:D3:FE"
+      ]
+    }
+  }
+]
