@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
   
   // Disable image optimization since this is a static export
   images: {
@@ -14,4 +15,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-
