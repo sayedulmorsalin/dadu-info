@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ProductStoreRedirect from "./ProductStoreRedirect";
+import AppRedirect from "../AppRedirect";
 
 const playStoreUrl =
   "https://play.google.com/store/apps/details?id=com.sayedulmarsalin.dadu";
@@ -26,7 +26,7 @@ export default function ProductFallbackPage() {
         padding: "120px 20px 48px",
       }}
     >
-      <ProductStoreRedirect />
+      <AppRedirect />
 
       <section style={{ margin: "0 auto", maxWidth: 680, width: "100%" }}>
         <p className="eyebrow">Dadu Khelaghor</p>
