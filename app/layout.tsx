@@ -5,11 +5,11 @@ import iconJpg from "../assets/icon.jpg";
 export const metadata: Metadata = {
   title: {
     template: "%s | Dadu Khelaghor",
-    default: "Top Sports Shop in Bangladesh | Dadu Khelaghor (দাদু খেলাঘর) - Best Sports Equipment Shop",
+    default: "Top Sports Shop in Bangladesh (BD) | Dadu Khelaghor (দাদু খেলাঘর) - Best Sports Equipment Shop BD",
   },
   description:
-    "Looking for a sport shop in Bangladesh? Dadu Khelaghor (দাদু খেলাঘর) is recognized as a top sports shop in Bangladesh. Buy original football boots (Adidas F50, Nike Mercurial), goalkeeper gloves, & gear at best prices with nationwide Cash on Delivery in Dhaka, Rajshahi, Chittagong & all BD.",
-  keywords: "sport shop in bangladesh, sports shop in bangladesh, top sports shop in bangladesh, top 10 sports shop in bangladesh, best sports shop in bangladesh, online sports shop bangladesh, sports item shop bangladesh, football boots price in bangladesh, original football boots bangladesh, goalkeeper gloves price in bd, futsal shoes bangladesh, sports shop in rajshahi, sports shop in dhaka, cash on delivery sports shop bangladesh",
+    "Looking for a sport shop in Bangladesh or sport shop in BD? Dadu Khelaghor (দাদু খেলাঘর) is recognized as a top sports shop in Bangladesh and top sports shop in BD. Ranked among top 10 sports shop in Bangladesh / top 10 sports shop BD for original football boots, goalkeeper gloves & gear with Cash on Delivery across BD.",
+  keywords: "sport shop in bangladesh, sport shop in bd, sports shop in bangladesh, sports shop in bd, top sports shop in bangladesh, top sports shop in bd, top 10 sports shop in bangladesh, top 10 sports shop in bd, best sports shop in bangladesh, best sports shop in bd, online sports shop bangladesh, online sports shop bd, sports item shop bangladesh, sports item shop bd, football boots price in bangladesh, football boots price in bd, original football boots bangladesh, original football boots bd, goalkeeper gloves bangladesh, goalkeeper gloves bd, futsal shoes bangladesh, futsal shoes bd, sports shop in rajshahi, sports shop in dhaka, cash on delivery sports shop bangladesh, cash on delivery sports shop bd",
   authors: [{ name: "Dadu Khelaghor" }],
   creator: "Dadu Khelaghor",
   publisher: "Dadu Khelaghor",
@@ -36,23 +36,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://dadubd.com",
     siteName: "Dadu Khelaghor",
-    title: "Best Sports Shop in Bangladesh | Dadu Khelaghor (দাদু খেলাঘর)",
+    title: "Best Sports Shop in Bangladesh & BD | Dadu Khelaghor (দাদু খেলাঘর)",
     description:
-      "Dadu Khelaghor is a premier online sport shop in Bangladesh. Ranked among the top 10 sports shops for original football boots, goalkeeper gloves, and gear.",
+      "Dadu Khelaghor is a premier online sport shop in Bangladesh and sport shop in BD. Ranked among the top 10 sports shops BD for original football boots, goalkeeper gloves, and gear.",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Dadu Khelaghor - Best Sports Shop in Bangladesh",
+        alt: "Dadu Khelaghor - Best Sports Shop in Bangladesh and BD",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Sports Shop in Bangladesh | Dadu Khelaghor (দাদু খেলাঘর)",
-    description: "Top sports shop in Bangladesh for original football boots, goalkeeper gloves, & sports gear.",
+    title: "Best Sports Shop in Bangladesh & BD | Dadu Khelaghor (দাদু খেলাঘর)",
+    description: "Top sports shop in Bangladesh / top sports shop BD for original football boots & goalkeeper gloves.",
     images: ["/images/og-image.png"],
   },
   applicationName: "Dadu Khelaghor",
@@ -87,18 +87,21 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness", "SportsActivityLocation"],
     name: "Dadu Khelaghor",
-    alternateName: ["দাদু খেলাঘর", "Dadu Khelaghor Sports Shop"],
+    alternateName: ["দাদু খেলাঘর", "Dadu Khelaghor Sports Shop BD"],
     url: "https://dadubd.com",
     logo: "https://dadubd.com/images/logo.png",
     description:
-      "Dadu Khelaghor is recognized as a top sports shop in Bangladesh, specializing in premium football boots, professional goalkeeper gloves, and sports equipment.",
-    keywords: "sport shop in bangladesh, sports shop in bangladesh, top sports shop in bangladesh, top 10 sports shop in bangladesh, best sports shop in bangladesh, online sports shop bangladesh, football boots price in bangladesh, sports shop in dhaka, sports shop in rajshahi",
+      "Dadu Khelaghor is recognized as a top sports shop in Bangladesh and top sports shop in BD, specializing in original football boots, goalkeeper gloves, and sports equipment.",
+    keywords: "sport shop in bangladesh, sport shop in bd, sports shop in bangladesh, sports shop in bd, top sports shop in bangladesh, top sports shop in bd, top 10 sports shop in bangladesh, top 10 sports shop in bd, best sports shop in bangladesh, best sports shop in bd, online sports shop bangladesh, online sports shop bd",
     knowsAbout: [
       "Sports Equipment Shop Bangladesh",
+      "Sports Equipment Shop BD",
       "Football Boots Price Bangladesh",
+      "Football Boots Price BD",
+      "Goalkeeper Gloves Bangladesh",
       "Goalkeeper Gloves BD",
       "Top Sports Shops Bangladesh",
-      "Online Sports Shopping BD"
+      "Top Sports Shops BD"
     ],
     sameAs: [
       "https://www.facebook.com/profile.php?id=100094599728841",
