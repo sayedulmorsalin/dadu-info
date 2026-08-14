@@ -29,10 +29,8 @@ export default function CatchAllPage() {
   );
 }
 
-// Generate static params if needed for 'export' mode,
-// though for a true catch-all we might just rely on the 404 behavior or common paths.
-// Since the user is using 'output: export', we should ideally list common paths
-// or ensure the server handles the routing.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [
     { slug: ['cart'] },

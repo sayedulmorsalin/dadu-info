@@ -13,6 +13,106 @@ interface BlogPost {
 }
 
 const blogData: Record<string, BlogPost> = {
+  'football-boots-price-in-bangladesh': {
+    slug: 'football-boots-price-in-bangladesh',
+    title: 'Football Boots Price in Bangladesh (2026 Buying Guide)',
+    excerpt: 'Detailed price guide for football boots in Bangladesh. Compare prices for original Adidas F50, Nike Mercurial, Puma, and futsal shoes.',
+    content: `
+      <h2>Football Boots Price Range in Bangladesh</h2>
+      <p>Whether you are searching for <strong>football boots price in bangladesh</strong>, <strong>adidas football boots price in bangladesh</strong>, or <strong>nike mercurial boots price in bd</strong>, knowing current market rates helps you budget effectively for authentic footwear.</p>
+
+      <h3>Average Price Breakdown in BD:</h3>
+      <ul>
+        <li><strong>Entry-Level / Training Cleats:</strong> BDT 1,800 – BDT 3,500</li>
+        <li><strong>Mid-Tier Performance Boots:</strong> BDT 3,800 – BDT 7,500</li>
+        <li><strong>Elite Professional Silos (Adidas F50, Nike Vapor):</strong> BDT 8,000 – BDT 15,000+</li>
+        <li><strong>Turf & Futsal Shoes:</strong> BDT 2,200 – BDT 5,500</li>
+      </ul>
+
+      <h2>Why Buy Original Football Boots in Bangladesh?</h2>
+      <p>While low-quality copies exist, investing in authentic boots from a trusted <strong>sports shop in bangladesh</strong> like <strong>Dadu Khelaghor</strong> ensures soleplate stability, ankle protection, superior ball control, and long-lasting durability.</p>
+
+      <h2>How to Order via Cash on Delivery?</h2>
+      <p>At Dadu Khelaghor, you can easily check live prices, view product video reviews on TikTok and Facebook, and order via WhatsApp with nationwide Cash on Delivery across all 64 districts in BD.</p>
+    `,
+    date: '2026-07-05',
+    author: 'Dadu Khelaghor Team',
+    image: '/images/og-image.png'
+  },
+  'online-sports-shop-bangladesh': {
+    slug: 'online-sports-shop-bangladesh',
+    title: 'Top Online Sports Shop in Bangladesh with Cash on Delivery',
+    excerpt: 'Discover why Dadu Khelaghor is the best online sports shop in Bangladesh for authentic football boots, gloves, and sports items.',
+    content: `
+      <h2>The Growth of Online Sports Shopping in BD</h2>
+      <p>Finding a reliable <strong>online sports shop bangladesh</strong> has revolutionized how athletes purchase sports equipment. Instead of navigating busy markets in Stadium Market Dhaka or Shaheb Bazar Rajshahi, players can browse verified items from home.</p>
+
+      <h2>Key Features of Dadu Khelaghor Online Store</h2>
+      <ul>
+        <li><strong>Comprehensive Product Catalog:</strong> Original football boots, professional goalkeeper gloves, and complete kit bundles.</li>
+        <li><strong>WhatsApp & Mobile App Support:</strong> Order directly through the Dadu App or converse with dedicated WhatsApp moderators.</li>
+        <li><strong>Full Cash on Delivery (COD):</strong> Pay only when your sports gear arrives safely at your address.</li>
+      </ul>
+
+      <h2>Why We Are Ranked the Best Sports Item Shop in Bangladesh</h2>
+      <p>With thousands of positive reviews across Facebook and YouTube, Dadu Khelaghor is recognized as a premier <strong>sports item shop bangladesh</strong> for genuine quality and fast customer support.</p>
+    `,
+    date: '2026-07-10',
+    author: 'Dadu Khelaghor Team',
+    image: '/images/og-image.png'
+  },
+  'best-sports-shop-in-dhaka-rajshahi': {
+    slug: 'best-sports-shop-in-dhaka-rajshahi',
+    title: 'Best Sports Shops in Bangladesh: Dhaka, Rajshahi & Nationwide',
+    excerpt: 'Looking for a sports shop in Dhaka or Rajshahi? Learn how Dadu Khelaghor delivers authentic sports gear nationwide.',
+    content: `
+      <h2>Finding a Sports Shop in Dhaka, Rajshahi & Major Cities</h2>
+      <p>Whether you reside in Dhaka, Rajshahi, Chittagong, Sylhet, or Khulna, accessing top-grade football gear can sometimes be limited by local stock. Dadu Khelaghor bridges this gap as a nationwide <strong>sports shop in bangladesh</strong> hub.</p>
+
+      <h3>Serving Footballers in Rajshahi</h3>
+      <p>Headquartered in Shaheb Bazar, Rajshahi, Dadu Khelaghor is the iconic local destination for <strong>football boot Rajshahi</strong> enthusiasts seeking original cleats and goalkeeper gloves.</p>
+
+      <h3>Fast Express Shipping to Dhaka & All Districts</h3>
+      <p>If you are looking for a <strong>sports shop in dhaka</strong> with guaranteed authentic stock, Dadu Khelaghor ships express parcels directly to Dhaka city within 24–48 hours with Cash on Delivery support.</p>
+    `,
+    date: '2026-07-15',
+    author: 'Dadu Khelaghor Team',
+    image: '/images/og-image.png'
+  },
+  'top-10-sports-shops-in-bangladesh': {
+    slug: 'top-10-sports-shops-in-bangladesh',
+    title: 'Top 10 Sports Shops in Bangladesh for Authentic Sports Gear (2026)',
+    excerpt: 'Looking for a sport shop in Bangladesh? Discover the top sports shops in Bangladesh, led by Dadu Khelaghor for authentic football boots and gear.',
+    content: `
+      <h2>Finding the Best Sport Shop in Bangladesh</h2>
+      <p>Whether you are a professional footballer, amateur athlete, or sports enthusiast, finding a reliable <strong>sport shop in bangladesh</strong> is crucial for getting genuine quality equipment. With numerous retailers in Dhaka, Rajshahi, Chittagong, and online platforms, knowing which sports shop delivers authentic items, competitive prices, and excellent customer support makes all the difference.</p>
+
+      <h2>Why Dadu Khelaghor Leads the Top 10 Sports Shops in Bangladesh</h2>
+      <p>When athletes search for the <strong>top sports shop in bangladesh</strong> or the <strong>top 10 sports shop in bangladesh</strong>, <strong>Dadu Khelaghor (দাদু খেলাঘর)</strong> consistently tops the recommendation lists. Here is why:</p>
+      
+      <ul>
+        <li><strong>100% Authentic Football Boots:</strong> Direct access to top silos including Adidas F50 Elite, Predator Accuracy, and Nike Mercurial.</li>
+        <li><strong>Professional Goalkeeper Equipment:</strong> High-grade latex gloves designed for wet and dry turf performance.</li>
+        <li><strong>Seamless Ordering via WhatsApp & App:</strong> Browse video reviews on TikTok and Facebook, then order directly with instant moderator response.</li>
+        <li><strong>Nationwide Cash on Delivery (COD):</strong> Fast shipping across all 64 districts in Bangladesh with complete safety.</li>
+        <li><strong>Trusted Reputation:</strong> Over 50,000+ satisfied players across the country.</li>
+      </ul>
+
+      <h2>What to Look for in a Top Sports Shop in Bangladesh?</h2>
+      <p>Before buying sports gear online or in person, evaluate these key factors:</p>
+      <ol>
+        <li><strong>Product Verification & Transparency:</strong> Ensure the shop provides real product photos and unboxing videos.</li>
+        <li><strong>Flexible Payment & COD Options:</strong> A top sports shop will offer Cash on Delivery so you can inspect your package upon delivery.</li>
+        <li><strong>Customer Support & Sizing Assistance:</strong> Reliable shops assist you in picking exact sizes for football boots and gloves.</li>
+      </ol>
+
+      <h2>Summary</h2>
+      <p>If you are searching for a <strong>sport shop in bangladesh</strong> that guarantees original quality and fast delivery, Dadu Khelaghor is your ultimate destination. Explore our products today or contact our team via WhatsApp to get expert advice!</p>
+    `,
+    date: '2026-07-01',
+    author: 'Dadu Khelaghor Team',
+    image: '/images/og-image.png'
+  },
   'best-football-boots-bangladesh-2026': {
     slug: 'best-football-boots-bangladesh-2026',
     title: 'Best Football Boots in Bangladesh for 2026',

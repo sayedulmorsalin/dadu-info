@@ -81,6 +81,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // New Blog Posts
     {
+      url: `${baseUrl}/blog/top-10-sports-shops-in-bangladesh`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/blog/football-boots-price-in-bangladesh`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/blog/online-sports-shop-bangladesh`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/blog/best-sports-shop-in-dhaka-rajshahi`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.90,
+    },
+    {
       url: `${baseUrl}/blog/best-football-boots-bangladesh-2026`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
