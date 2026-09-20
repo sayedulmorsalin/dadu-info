@@ -43,7 +43,7 @@ const returnSteps = [
     icon: MessageCircle,
     title: "Contact Our Support Team",
     description:
-      "Reach out to our support team via email at dadukhelaghor@gmail.com or call 01743164466 with your details.",
+      "Reach out to our support team via email at dadukhelaghor@gmail.com or call 01346444121 with your details.",
     color: "#8b5cf6",
   },
   {

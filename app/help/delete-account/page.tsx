@@ -139,8 +139,8 @@ export default function DeleteAccount() {
                   dadukhelaghor@gmail.com
                 </a>{" "}
                 or call{" "}
-                <a href="tel:01743164466" style={{ color: "var(--accent)", fontWeight: 700 }}>
-                  01743164466
+                <a href="tel:01346444121" style={{ color: "var(--accent)", fontWeight: 700 }}>
+                  01346444121
                 </a>.
               </p>
             </div>

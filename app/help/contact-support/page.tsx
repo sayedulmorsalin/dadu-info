@@ -18,7 +18,7 @@ import "../help.css";
 export const metadata: Metadata = {
   title: "Contact Support",
   description:
-    "Contact Dadu Khelaghor support. Email: dadukhelaghor@gmail.com. Phone: 01743164466. Developer: Md. Sayedul Morsalin.",
+    "Contact Dadu Khelaghor support. Email: dadukhelaghor@gmail.com. Phone: 01346444121. Developer: Md. Sayedul Morsalin.",
 };
 
 const contactChannels = [
@@ -34,9 +34,9 @@ const contactChannels = [
   },
   {
     icon: Phone,
-    title: "Phone Support (Tamim)",
-    value: "01743164466",
-    href: "tel:01743164466",
+    title: "Phone Support (Fardin)",
+    value: "01346444121",
+    href: "tel:01346444121",
     description: "Call us directly for urgent order issues, payment problems, or delivery concerns.",
     responseTime: "Immediate",
     color: "#10b981",
